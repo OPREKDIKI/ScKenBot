@@ -16,12 +16,12 @@ const { name, author } = require(join(__dirname, './package.json')) // https://w
 const { say } = cfonts
 const rl = createInterface(process.stdin, process.stdout)
 
-say('Rull\nBOT', {
+say('Ken\nBOT', {
   font: 'block',
   align: 'center',
   colors: ['blue']
 })
-say(`🌸 RullBot-V6 By @${global.nameown}`, {
+say(`🌹 KenBot-V1 By @${global.nameown}`, {
   font: 'console',
   align: 'center',
   colors: ['yellow']
@@ -62,7 +62,7 @@ function start(file) {
   })
   let p = fork()
   p.on('message', data => {
-    console.log('[⚠️]RECEIVED', data)
+    console.log('[⚠️]Mendapatkan Perintah', data)
     switch (data) {
       case 'reset':
         p.process.kill()
